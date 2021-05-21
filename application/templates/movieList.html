@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+    {% for movie in movies_list %}
+        {{ movie.movie_name }} - {{ movie.movie_genre }}
+        
+        <div style="display:inline">
+            <form action= "{{url_for('update', userID=userID, movieID=movie.id)}}" > 
+                <input type = submit value="Update">
+            </form>
+        
+            <form action= "{{url_for('delete', userID=userID, movieID=movie.id)}}" > 
+                <input type = submit value="Delete">
+            </form>
+        </div>
+        <br>
+    {% endfor %}
+
+    
+    <form action= "{{ url_for('addMovie', userID=userID)}}" > 
+        <input type = submit value="Add Movie">
+    </form>
+  
+{% endblock body_content %}
+

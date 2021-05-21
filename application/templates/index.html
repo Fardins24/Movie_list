@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+    
+    <h4> User List </h4>
+
+    {% for user in all_users %}
+        <a href="{{ url_for('movieList', userID=user.id) }}"> {{ user.first_name }}  {{ user.last_name }} </a>
+    
+        <br>
+    
+    {% endfor %}
+
+    <br><br>
+
+    <form action= "{{url_for('create')}}" > 
+        <input type = submit value="Create User">
+    </form>
+
+    
+
+
+
+{% endblock body_content %}
