@@ -97,7 +97,7 @@ The list I produced are as follows:
 Pictured below is an entity relationship diagram (ERD) showing the structure of the database. It features a one to many relationships between the user and movies thus the foreign key is in the user ID column as a result a user can lift many movies.
 <br/>
 
-![ERD image 1](https://i.imgur.com/8rIjm4P.png)
+![ERD image 1](https://github.com/Fardins24/Movie_list/blob/master/assets/ERD.png?raw=true)
 <br/>
 
 
