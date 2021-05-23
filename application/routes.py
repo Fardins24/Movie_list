@@ -25,7 +25,7 @@ def create():
         return redirect(url_for('home')) 
     return render_template('create.html', subheading= "Create User :)", form=form)
 
-@app.route("/<int:userID>/movie-list" , methods=['GET', 'POST'])
+@app.route("/<int:userID>/movie-list")
 def movieList(userID):
     movies_list = Movie.query.filter_by(user_id=userID) 
     return render_template ('movieList.html', subheading= "List of Movies", movies_list=movies_list, userID=userID)
