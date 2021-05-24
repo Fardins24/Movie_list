@@ -71,10 +71,12 @@ And outline of how the CRUD application is implemented can be seen below:
 The first image below it is the risk assessment made it before any work done on the web application started.
 <br/>
 Here is a screenshot of my risk assessment at the start of the project:
-![After - trello board image](https://i.imgur.com/6vIvGiq.png)
+![Before - risk assessment](https://github.com/Fardins24/Movie_list/blob/master/assets/first_risk_assessment.png?raw=true)
 
 The final risk assessment whilst during and after the final web application.
-![After - trello board image](https://i.imgur.com/6vIvGiq.png)
+![After - starting the project](https://github.com/Fardins24/Movie_list/blob/master/assets/updated_1.png?raw=true)
+![After - starting the project](https://github.com/Fardins24/Movie_list/blob/master/assets/updated_2.png?raw=true)
+
 
 
 ## Project Tracking
@@ -90,7 +92,7 @@ The list I produced are as follows:
 * Complete - All tasks that are completed.
 * Issues - This represents the issues that I had facing during the process of this project.
 
-![After - trello board image](https://i.imgur.com/6vIvGiq.png)
+![After - trello board image](https://github.com/Fardins24/Movie_list/blob/master/assets/trello.png?raw=true)
 <br/><br/>
 
 ### Entity relationship diagram
@@ -111,13 +113,19 @@ The picture below shows a image of a continuous integration pipeline with the as
 #### Create user page
 This section will discuss the basic workings of the front end web application design for this project. The navigation to the homepage or to the URL with no specified path, the user will notice a title called movie list. On the homepage, the user will then notice a button which, if you click the button it will redirect them to a create user page. The way that this works is that once the user clicks on the create user button, a new user is generated in the database with their names written in the required fields. This will then subsequently be shown in the homepage under a subheading called users due to the name being in the database.
 
+
 First the create user button is clicked:
 
 * First name
 * Last name
 * Age
 
+![create Page](https://github.com/Fardins24/Movie_list/blob/master/assets/create_user.png?raw=true)
+
 After the user enters their details it will redirect them back to the homepage and then the user will notice their name under the subheading users.
+
+![Home Page](https://github.com/Fardins24/Movie_list/blob/master/assets/home_page.png?raw=true)
+
 
 #### Main page - movie list
 
@@ -125,18 +133,41 @@ After creating a user, the user can now click on their own name on the homepage,
 
 On the list of movies page, the user is then given an option to add movies. The user will also notice that on this page it is empty as there are no entries initiated. After the user clicks on add movies, it will redirect them to the add movie page where the user can at this point submit a movie name and genre that they want to watch. After entering a movie name and the movie genre this information Will be stored on to the database with their unique ID.
 
+![Add movies](https://github.com/Fardins24/Movie_list/blob/master/assets/addmovie2.png?raw=true)
+
+
 After the user clicks on submit it will then redirect the user back to the movie list page and there the user will notice the movie that they entered.
 Also the user can notice that under the movie the movie they entered and submitted, there are other options to add another movie in which the user can click on the button to add another entry to do list.
 
+![Add movies](https://github.com/Fardins24/Movie_list/blob/master/assets/addmovies.png?raw=true)
+
+
 The other option is the update button when the user clicks this button underneath the movie that they just submitted, the update to button will redirect the user back to the add movies page. At this point the user will notice that their initial entry will be shown. From here the user can change their initial movie entry to something more desirable to watch. After filling out the different movie name and the movie genre the user will now submit the new entry. This will then redirect the user back to the movie list page were the updated movie replaces the old movie entry.
+
+![update](https://github.com/Fardins24/Movie_list/blob/master/assets/update.png?raw=true)
+
+
 
 After their user has entered all of the movies that they want to watch, there is the last option that when the user watched the movie, they can then therefore have an option to click on the delete button which will then delete the entry from the list.
 
+![delete](https://github.com/Fardins24/Movie_list/blob/master/assets/delete.png?raw=true)
+
+
+
 ### CI Server
+
+![Jenkins](https://github.com/Fardins24/Movie_list/blob/master/assets/jenkins.png?raw=true)
+
+Could not connect 
+
+![Jenkins](https://github.com/Fardins24/Movie_list/blob/master/assets/jenkinserror.png?raw=true)
+
+
 
 ## Testing
 ### Unit Testing
 The first test initated on the movie-list project was unit testing. The route functions are tested individually with various scenarios. Each function therefore, should return the expected response under each given scenario fir it to be deemed a success. Testing in this manner helps the developer find out if any of the function is not working the way it is meant to. These tests could be run automatcally after every Git push using Jenkins. Jenkins will then produce a coverage report detailing coverage percentage, whether the tests were successful and which lines have yet to be tested.
+
 
 ### Integration testing
 To perform integration testing, selenium was used.
@@ -144,9 +175,19 @@ To perform integration testing, selenium was used.
 ### Test Results
 The below image shows the coverage report for my project application. As shown, the unit testing which was done showed a test coverage of 100%.
 
+![unit test](https://github.com/Fardins24/Movie_list/blob/master/assets/unit_test.png?raw=true)
+
+
+
 ## Future Improvements
 Throughout the course of the project there are many improvements that can be made to the application. Below are a few which I could of developed the web application:
 * To improve the front end design of the web application
 * The user not only can delete an entry of film, but also delete there user as a whole
 * Do integration testing which will help the developer even more to find any mistakes
 * Push it up to the CI server would save a lot of time for the developer for future improvements
+
+### Author
+Fardin Shah
+
+### Acknowledgements
+* [Harry Volker](https://github.com/htr-volker)
